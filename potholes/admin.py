@@ -9,8 +9,11 @@ from django.utils.html import format_html
 class PotholeAdmin(OSMGeoAdmin):
 
     def image_tag(self, obj):
-        return format_html('<img src="{}" width="50px" />'.format("/static/Gir_Arun.jpg"))
+        html = ""
+        for imageName in obj.imageNames.split("|"):
+            html += '<img src="{}" width="24px" />'.format("/static/"+ imageName)
+        return format_html(html)        
 
-    image_tag.short_description = 'Image' 
+    image_tag.short_description = 'Images' 
 
     list_display = ('name', 'location', "image_tag")

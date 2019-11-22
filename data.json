@@ -15,8 +15,7 @@
       "tags": {
         "ele": "2",
         "name": "Egmore",
-        "image":"{% load static %} '<img src="{% static "/static/Gir_Arun.jpg" %}" alt="My image"/>'",
-
+        "imageName": "Gir_Arun.jpg|Gir_Arun.jpg|Gir_Arun.jpg|Gir_Arun.jpg|Gir_Arun.jpg"
       }
     },
     {
@@ -27,6 +26,7 @@
       "tags": {
         "ele": "2",
         "name": "AnnaNagar",
+        "imageName": "Gir_Arun.jpg|Gir_Arun.jpg"
       }
     }
   ]
