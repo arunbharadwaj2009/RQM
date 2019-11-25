@@ -7,7 +7,7 @@ from django.utils.html import format_html
 
 @admin.register(Pothole)
 class PotholeAdmin(OSMGeoAdmin):
-
+    
     def image_tag(self, obj):
         html = ""
         for imageName in obj.imageNames.split("|"):
