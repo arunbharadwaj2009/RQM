@@ -5,15 +5,15 @@ from django.contrib.gis.admin import OSMGeoAdmin
 from .models import Pothole
 from django.utils.html import format_html
 
-
 @admin.register(Pothole)
 class PotholeAdmin(OSMGeoAdmin):
 
     def image_tag(self, obj):
+        if obj.imageNames == None:
+            return ""
         html = ""
         for imageName in obj.imageNames.split("|"):
-            html += '<a href="{}" target="_blank"><img src="{}" width="24px" /></a>'.format(
-                "/static/" + imageName, "/static/" + imageName)
+            html += '<a href="{}" target="_blank"><img src="{}" width="24px" /></a>'.format("/static/" + imageName, "/static/" + imageName)
         return format_html(html)
 
     image_tag.short_description = 'Images'

@@ -1,8 +1,9 @@
 from django.shortcuts import render
 from .forms import JsonFileForm
 from .models import Pothole
-from django.contrib.gis.geos import fromstr
+from django.contrib.gis.geos import Point
 import json
+from django.contrib.gis.geos import fromstr
 
 # Create your views here.
 
