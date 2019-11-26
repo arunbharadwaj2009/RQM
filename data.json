@@ -11,11 +11,11 @@
       "type": "node",
       "id": 1,
       "lat": 13.07,
-      "lon": 80.26,
+      "lon": 80.21,
       "tags": {
         "ele": "2",
         "name": "Egmore",
-        "imageName": "Gir_Arun.jpg|Gir_Arun.jpg|Gir_Arun.jpg|Gir_Arun.jpg|Gir_Arun.jpg"
+        "imageName": "RQM_Nov26_1.png|RQM_Nov26_2.png"
       }
     },
     {
@@ -26,7 +26,7 @@
       "tags": {
         "ele": "2",
         "name": "AnnaNagar",
-        "imageName": "Gir_Arun.jpg|Gir_Arun.jpg"
+        "imageName": "RQM_Nov26_3.png"
       }
     }
   ]
